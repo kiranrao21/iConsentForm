@@ -95,8 +95,10 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
 }
 
 .login-form-cont{
-  background-image: linear-gradient(to right, #fff, #0d94fb);
+  /* background-image: linear-gradient(to right, #fff, #0d94fb); */
+  background: #2e5aa9;
   height: 55em;
+  color:#fff;
 } 
 
 .login-cred{
@@ -105,7 +107,7 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
 }
 
 .login-cred div{
-  color: #0d94fb;
+  color: #fff;
   font-weight: bold;
   margin-bottom: 7px;
 }
@@ -126,13 +128,14 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
 
 .login-btn{
   text-decoration: none;
-  background: #0d94fb;
+  background: #41c0f1;
+  color: #fff;
   padding: 13px;
   border-radius: 8px;
   display: block;
-  width: 36%;
+  width: 14%;
   margin: 0 auto;
-  margin-top: 8%;
+  /* margin-top: 8%; */
 }
 
 .login-form a{
@@ -148,6 +151,45 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
   text-decoration: none;
 }
 
+.search-cta-2 {
+  padding: 0;
+  text-align: right;
+}
+
+
+.searchbar-input, .searchbar-input:active {
+  border: none;
+  border-radius: 6px 0 0 6px;
+  height: 48px;
+  vertical-align: top;
+  padding-left: 14px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  outline: 0;
+  width: calc(100% - 50px);
+}
+
+.search-button {
+  align-items: center;
+  background: #41c0f1;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  margin-left: -5px;
+  outline: 0;
+  vertical-align: top;
+  width: 56px;
+}
+
+.search-button svg {
+  fill: #fff;
+  width: 24px;
+}
+
 @media(min-width:768px){
   .login-title-h1{
     margin-top: 0;
@@ -157,6 +199,7 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
     margin-top: 0;
   }
   .login-input{
+    margin-bottom: 2%;
     width: 53%;
   }
   .login-cred{
@@ -164,5 +207,24 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
   }
   .login-cred div{
     width: 54%;
+  }
+}
+
+@media(max-width:768px){
+  .login-input{
+    margin-bottom: 4%;
+  }
+  .login-btn{
+    width: 56%;
+  }
+  .login-cred{
+    text-align: center;
+  }
+  .login-form-cont{
+    height: 50em;
+  }
+  .login-input{
+    border-radius: 4px;
+    height: 32px;
   }
 }
