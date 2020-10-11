@@ -3,6 +3,8 @@ Table of Content
 0. Bootstrap
 1.0 Global Styles
 2.0 Login Form
+3.0 Create List
+4.0 Tables
 */
 
 /* 0. Bootstrap */
@@ -166,7 +168,8 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
   padding-top: 12px;
   padding-bottom: 14px;
   outline: 0;
-  width: calc(100% - 50px);
+  width: calc(100% - 59px);
+  border: 1px solid;
 }
 
 .search-button {
@@ -227,4 +230,37 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
     border-radius: 4px;
     height: 32px;
   }
+}
+
+/* 3.0 Create List */
+
+.list-create{
+  color: #fff;
+  text-decoration: none;
+  background: #41c0f1;
+  padding: 17px;
+  border-radius: 5px;
+  display: block;
+  /* width: 50%; */
+  text-align: center;
+  margin-top: 2%;
+}
+
+/* 4.0 Tables */
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 3% 0;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
