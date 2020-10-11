@@ -56,6 +56,7 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
 .login-title-h1{
   font-size: 2em;
   margin: 0;
+  margin-top: 10%;
 }
 
 .user-type{
@@ -94,12 +95,12 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
 }
 
 .login-form-cont{
-  background: linear-gradient(360deg,#e8f2fa 76%,#fff 50%);
+  background-image: linear-gradient(to right, #fff, #0d94fb);
 } 
 
 .login-cred{
   text-align: left;
-  padding: 25px;
+  padding: 0 25px;
 }
 
 .login-cred div{
@@ -127,8 +128,21 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-s
   background: #0d94fb;
   padding: 13px;
   border-radius: 8px;
+  display: block;
+  width: 36%;
+  margin: 0 auto;
+  margin-top: 8%;
 }
 
 .login-form a{
   color: #fff;
+}
+
+.login-title img{
+  margin-top: 5%;
+  width: 22%;
+}
+
+.login-create-acc{
+  text-decoration: none;
 }
